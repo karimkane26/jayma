@@ -88,10 +88,7 @@ nav ul li a {
 .deux{
     width: 70%;
 }
-.agro div img{
-    border-radius: 20px 20px 0 0;
-   
-}
+
 
 .form2{
     background-image: url('img/Actualite/16_1_small.jpg');
@@ -111,10 +108,11 @@ nav ul li a {
     padding: 20px;
     border-radius: 20px;
 }
+/* La partie responsive */
 @media (max-width: 768px) {
+    
    
     header {
-        /* width: 1200px; */
         width: 100%;
         display: flex;
     }
@@ -129,6 +127,54 @@ nav ul li a {
 }
 .hero div img{
     width: 300px;
+}
+
+}
+
+@media(max-width: 596px){
+    header {
+        width: 100%;
+        display: flex;
+        gap: 5px ;
+        flex-direction: row;
+        align-items: center;
+    }
+    .hero div h1{
+    font-size: 20px;
+    margin: 0;
+    color: green;
+}
+.hero div img{
+    width: 150px;
+}
+
+.agro{
+    display: flex;
+    flex-direction: column;
+}
+.agro{
+    width: 100%;
+}
+.agro div{
+        box-shadow: 5px 5px 5px #000;
+        border-radius: 20px;
+}
+.agro div img{
+    margin-left: 15px;
+}
+
+.agro .deux{
+    display: flex;
+    justify-content:center ;
+    flex-direction: column;
+}
+
+.form2{
+margin: 0;
+}
+
+.form2 div{
+margin: 0;
 }
 
 }
